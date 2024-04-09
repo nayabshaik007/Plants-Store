@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+::selection{
+    background-color: rgb(1, 249, 1);
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* 1st Styling the navbar */
+
+#navbar{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background: url(../img/bg-img.jpg) no-repeat scroll top center;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    opacity: 0.89;
+    z-index: -1;
+}
+
+#navbar ul{
+    /* border: 2px solid black; */
+    list-style: none;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    /* margin-left: 550px; */
+    /* margin-top: 30px; */
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
+}
+
+                                            /* Transition effect */
+
+#navbar ul li:hover{
+    transform: translate(-2px,-1px);
+    transition: 0.3s linear 0s;
+    text-shadow: 5px 14px 8px black;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+#navbar li a:hover{
+    color: rgb(34, 238, 24);
+    /* background-color: rgba(8, 8, 8, 0.68); */
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* Second section styling */
+
+#secondsec{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 20px;
+    height: 450px;
+    width: 100%;
+    
+}
+
+.slogan{
+    /* display: absolute; */
+    /* top: 80px; */
+    margin-top: 110px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* Fixng the whatsapp logo */
+.whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+.whatsapp img{
+    width: 50px;
+    cursor: pointer;
+}
+
+/* Transition effect */
+
+.whatsapp img:hover{
+    transform: translate(-2px, -2px);
+    transition: 0.3s ease-in-out;
+    width: 54px;
+/* text-shadow: 5px 5px 8px black; */
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* 3rd Category Section Styling */
+
+#categorysec{
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#categorysec .box .purifier{
+    width: 180px;
+}
+#categorysec .box{
+    /* border: 3px dotted green; */
+    /* margin: 20px; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    width: 260px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 4;
+    background-color:rgb(253, 240, 240);
+    cursor: pointer;
+}
+
+#categorysec .box img{
+    width: 170px;
+}
+
+#thirdsec #btn{
+    position: relative;
+    left: 627px;
+    top: -10px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* 4th About us Section Styling */
+
+.about{
+    width: 80%;
+    position: relative;
+    top: 30px;
+    left: 10%;
+    text-align: center;
+    /* word-spacing: 5px; */
+    line-height: 23px;
+
+}
+
+.about p{
+    margin-top: 30px;
+}
+
+.about p::first-letter{
+    font-size: 80px;
+    color: rgb(24, 214, 24);
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* 5th Our services section styling */
+
+#services{
+    /* border: 2px solid black; */
+    position: relative;
+    top: 45px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.box img{
+    width: 50px;
+}
+
+.box .first{
+    font-weight: 700;
+}
+.box .second{
+    font-weight: 500;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* 6th Order section styling */
+
+#order{
+    width: 100%;
+}
+.names{
+    text-align: center;
+    display: inline-block;
+    margin: 0px 400px;
+    /* border: 2px solid black; */
+}
+
+.emailphmsg .block{
+    display: block;
+    margin: 5px auto;
+    width: 532px;
+
+}
+
+.btn{
+    display: block;
+    margin: 5px auto;
+    width: 532px;
+    font-size: 17px;
+    font-weight: 600;
+    /* background-color: rgb(217, 210, 210); */
+}
+
+#order #s-heading{
+    margin-top: 100px;
+}
+
+label sup{
+    color: red;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Last footer section styling */
+
+#footer{
+    background-color: rgb(212, 248, 236);
+    padding: 1px;
+    margin-top: 30px;
+    /* border: 2px solid; */
+}
+
+#details{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+    font-size: 18px;
+}
+
+.foot{
+    cursor: pointer;
+}
+
+.logos img{
+    width: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.rights{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* Utility Classes */
+
+#s-heading{
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+h4{
+    text-transform: capitalize;
+}
+
+#btn{
+    text-transform: capitalize;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+#btn:hover{
+    background-color: rgb(155, 242, 155);
+    color: black;
+    font-weight: 900;
+    border: 2px solid white;
+}
+
+/* -------------------------------------------------***THE END***------------------------------------------------ */
+
